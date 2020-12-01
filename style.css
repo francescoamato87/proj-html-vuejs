@@ -1,0 +1,385 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+
+.homepage{
+height: 100vh;
+background-image: url(./img/home_slider.jpg);
+background-size: cover;
+background-position: center;
+}
+
+.homepage-components{
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 250px; */
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.homepage h1{
+font-size: 120px;
+color: #ffff;
+}
+
+.homepage h4{
+color: #ffff;
+margin-top: 30px;
+}
+
+/* Buttons */
+.homepage-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+   position: relative;
+   background-color: transparent;
+   border: 2px solid white;
+   font-size: 18px;
+   color: #FFFFFF;
+   padding: 15px;
+   width: 200px;
+   text-align: center;
+   -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+   text-decoration: none;
+   overflow: hidden;
+   cursor: pointer;
+   outline: none;
+   margin-top: 50px;
+
+ }
+
+ .buttons:after {
+   content: "";
+   background: red;
+   display: block;
+   position: absolute;
+   padding-top: 300%;
+   padding-left: 350%;
+   margin-left: -20px!important;
+   margin-top: -120%;
+   opacity: 0;
+   transition: all 0.8s
+ }
+
+ .buttons:active:after {
+   padding: 0;
+   margin: 0;
+   opacity: 1;
+   transition: 0s
+ }
+
+ .button-1{
+   background: #ec4958;
+   margin-right: 10px;
+ }
+.button-2{
+  margin-left: 10px;
+}
+
+
+/* MUSIC-LIFE SECTION */
+.border{
+  height:10px;
+  width:350px;
+  background:  #ec4958;
+  border-radius: 20px;
+  margin-bottom:40px;
+  margin-top: -95px;
+}
+
+.music-life{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color:#ffff;
+  height:300px;
+  background:#323844;
+  text-align: center;
+
+}
+
+.music-life-border{
+  width:250px;
+  border: 1px solid grey;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.music-life-comments p{
+  text-align: center;
+}
+
+/* COLLAGE */
+
+.img-collage{
+  max-width: 1000px;
+
+}
+
+.img-collage::after{
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.collage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+  text-align: center;
+  background: #252a33;
+
+}
+
+.collage h1, span p{
+  color:#ffff;
+}
+
+.img-collage{
+  margin-top: 50px;
+}
+
+.collage-left{
+  width:66%;
+  float: left;
+  padding: 5px;
+}
+.collage-right{
+  width:33%;
+  float: left;
+  padding: 5px;
+}
+
+.caption{
+  background:#323844;
+  color: white;
+  height:100px;
+  text-align: center;
+}
+
+.caption h5{
+  padding-top:20px;
+
+}
+.caption p{
+padding: 10px;
+font-size: 12px;
+line-height: 20px;
+color: grey;
+}
+
+.wrapper-collage{
+  padding: 10px;
+}
+
+.wrapper-collage img{
+  max-width: 100%;
+}
+
+.wrap-float > .wrapper-collage{
+  float: left;
+  width: 50%;
+}
+
+.wrap-float::after{
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.post-1{
+  width: 630px;
+}
+
+/* NEWS */
+
+.news{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:150px;
+  background: #ec4958;
+}
+.news p{
+  color: #ffff;
+  font-size:14px;
+}
+
+.parallax{
+  height: 100vh;
+  background-image: url(./img/home-testimonial-parallax.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-content img{
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+.parallax-content img:hover{
+  opacity: 0.9 ;
+}
+
+.parallax-content h3 {
+text-align: center;
+color: white;
+line-height: 40px;
+}
+
+/* LIVE DATES SECTION */
+.date-tables{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #252a33;
+  padding-bottom: 100px;
+}
+
+.date-tables h1{
+  color:#ffff;
+  padding-top:50px
+}
+
+.date-tickets{
+  text-align: center;
+  color:#ffff;
+  padding-bottom: 30px;
+}
+
+.date{
+  padding: 15px;
+  /* border: 1px solid grey; */
+  width:1000px;
+  font-size: 15px;
+  color: grey;
+  margin-top:10px;
+  background: #323844;
+}
+
+.date span{
+  padding-left: 30px;
+}
+
+/* DATES LINE */
+.dates-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:150px;
+  background: #ec4958;
+}
+.dates-line:hover{
+  color: black;
+  background: #ffff;
+}
+
+.dates-line p{
+  color: #ffff;
+  font-size:14px;
+}
+
+.dates-line p:hover{
+color:black;
+}
+
+.footer{
+  height:150px;
+  display: flex;
+  justify-content: space-between;
+  background: #323844;
+}
+
+.footer img{
+  height: 50px;
+  margin-top: 50px;
+  padding-left: 20px;
+}
+.footer-menu{
+display: flex;
+align-items: center;
+padding: 20px;
+}
+
+.footer-menu li{
+  margin-right: 20px;
+  list-style: none;
+  font-size: 15px;
+  color: grey;
+}
+.footer-menu li:hover{
+  color: white;
+}
+
+/* SOCIAL MEDIA */
+.social-media{
+  background: #252a33;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright{
+  color:grey;
+  display: flex;
+  align-items: center;
+  padding:20px;
+}
+
+.copyright li{
+  font-size: 12px;
+  list-style: none;
+  padding-left: 10px;
+}
+
+.social-icons{
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+
+}
+.social-container{
+  position: relative;
+  background: #323844;
+  /* border: 1px solid grey; */
+  height:40px;
+  width: 40px;
+  border-radius: 5px;
+  margin-right:10px;
+}
+
+.social-container .fab{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  color: grey;
+}
+.social-container .fab:hover{
+  color: #ffff;
+}
