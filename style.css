@@ -123,6 +123,11 @@ margin-top: 30px;
   margin-bottom: 50px;
 }
 
+.music-life h1{
+  color:#ffff;
+  font-size:2em;
+}
+
 .music-life-comments p{
   text-align: center;
 }
@@ -151,7 +156,13 @@ margin-top: 30px;
 
 }
 
-.collage h1, span p{
+.collage h1{
+  color:#ffff;
+}
+.collage h5{
+  color:#ec4958;
+}
+.collage span p{
   color:#ffff;
 }
 

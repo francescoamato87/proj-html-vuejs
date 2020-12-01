@@ -44,9 +44,11 @@
 
 <section class="music-life">
   <div class="border"></div>
-  <h1 class"music-life-title">Music Is Life</h1>
+  <h1>Music Is Life</h1>
   <div class="music-life-border"></div>
-  <span class="music-life-comments"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p></span>
+  <span class="music-life-comments"><p>
+Music warms your heart, relaxes your mind and gives you the opportunity to relate to people even if they have different tastes, music unites regardless... <br>
+follow your musical instinct and search our site for contests that might interest you.</p></span>
 </section>
 
 <!-- COLLAGE SECTION -->
@@ -150,22 +152,34 @@
 Choose your favorite event and book your ticket through our website or through authorized resellers <br> for the sale of live concert tickets.</span>
 
   <div class="date">
-    <div><i class="fas fa-plus"></i><span>17/08/20 GEM FESTIVAL 2020 ANAKALIA, GEORGIA</span></div>
+    <div><i class="fas fa-plus"></i>
+      <span v-for="(element) in menu">{{element.dates}}</span>
+    </div>
   </div>
   <div class="date">
-    <div><i class="fas fa-plus"></i><span>24/09/20 GROOVEFEST DOMINICAL REPUBLIC</span></div>
+    <div><i class="fas fa-plus"></i>
+      <span></span>
+    </div>
   </div>
   <div class="date">
-    <div><i class="fas fa-plus"></i><span>31/10/2020 OASIS FESTIVAL 2020 MARRAKECH, MAROCCO</span></div>
+    <div><i class="fas fa-plus"></i>
+      <span></span>
+    </div>
   </div>
   <div class="date">
-    <div><i class="fas fa-plus"></i><span>07/11/20 MOGA FESTIVAL 2020 -  ESSAURIA, MAROCCO</span></div>
+    <div><i class="fas fa-plus"></i>
+      <span></span>
+    </div>
   </div>
   <div class="date">
-    <div><i class="fas fa-plus"></i><span>26/11/2020 CROSSROAD FESTIVAL 2020 LOS ANGELES, CALIFORNIA</span></div>
+    <div><i class="fas fa-plus"></i>
+      <span></span>
+    </div>
   </div>
   <div class="date">
-    <div><i class="fas fa-plus"></i><span> 10/12/20 SAGRA DELLA PORCHETTA, CASALETTO SPARTANO - SALERNO </span></div>
+    <div><i class="fas fa-plus"></i>
+      <span> </span>
+    </div>
   </div>
 </div>
 
@@ -175,16 +189,16 @@ Choose your favorite event and book your ticket through our website or through a
 </section>
 
 <!-- FOOTER -->
-<footer class= "footer">
+<footer id= "footer"
+class= "footer">
   <img src="./img/logo_footer.png" alt="">
   <ul class="footer-menu">
-    <li>Home</li>
-    <li>Meet The Band</li>
+    <li v-for="(element) in menu"> {{ element.title }}</li>
+    <!-- <li>Meet The Band</li>
     <li>Live Dates</li>
     <li>Live News</li>
     <li>Albums</li>
-    <li>Fans</li>
-
+    <li>Fans</li> -->
   </ul>
 </footer>
 
@@ -195,32 +209,26 @@ Choose your favorite event and book your ticket through our website or through a
     <li>Copyright 2020</li>
     <li>AVADA THEME BY THEME FUSION</li>
     <li>ALL RIGHT RESERVED</li>
-    <li>POWER BY Francesco Boolean Soldier</li>
+    <li>Powered By Francesco Boolean Soldier</li>
   </ul>
 
   <div class="social-icons">
       <div class="social-container">
-        <i class="fab fa-facebook-f"></i>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
       </div>
       <div class="social-container">
-        <i class="fab fa-twitter"></i>
+        <a href="https://www.instagram.com/"><i class="fab fa-twitter"></i></a>
       </div>
       <div class="social-container">
-        <i class="fab fa-instagram"></i>
+        <a href="https://twitter.com/login?lang=it"><i class="fab fa-instagram"></i></a>
       </div>
       <div class="social-container">
-        <i class="fab fa-youtube"></i>
+        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
       </div>
   </div>
 
 
 </section>
-
-
-
-
-
-
 
 </div>
 
