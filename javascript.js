@@ -37,32 +37,32 @@ const date = new Vue({
       {
         isOpen: false,
         day:'26/11/2020 CROSSROAD FESTIVAL 2020 LOS ANGELES, CALIFORNIA',
-        ticket:'until 12 October.'
+        ticket:'Tickets available until 12 October.'
       },
       {
         isOpen: false,
         day:'17/08/20 GEM FESTIVAL 2020 ANAKALIA, GEORGIA',
-        ticket:'until 12 October.'
+        ticket:'Tickets available until 12 October.'
       },
       {
         isOpen: false,
         day:'24/09/20 GROOVEFEST DOMINICAL REPUBLIC',
-        ticket:'until 12 October.'
+        ticket:'Tickets available until 12 October.'
       },
       {
         isOpen: false,
         day: '31/10/2020 OASIS FESTIVAL 2020 MARRAKECH, MAROCCO',
-        ticket:'until 12 October.'
+        ticket:'Tickets available until 12 October.'
       },
       {
         isOpen: false,
         day:'07/11/20 MOGA FESTIVAL 2020 -  ESSAURIA, MAROCCO',
-        ticket:'until 12 October.'
+        ticket:'Tickets available until 12 October.'
       },
       {
         isOpen: false,
         day: '10/12/20 SAGRA DELLA PORCHETTA, CASALETTO SPARTANO – SALERNO',
-        ticket:'until 12 October.'
+        ticket:'Tickets available until 12 October.'
       },
     ]
   },

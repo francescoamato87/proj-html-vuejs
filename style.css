@@ -218,7 +218,7 @@ margin-top: 30px;
 
  .buttons:after {
    content: "";
-   background: red;
+   background: gold;
    display: block;
    position: absolute;
    padding-top: 300%;
@@ -226,14 +226,15 @@ margin-top: 30px;
    margin-left: -20px!important;
    margin-top: -120%;
    opacity: 0;
-   transition: all 0.8s
+   transition: all 1s
  }
 
- .buttons:active:after {
+ .buttons:hover:after {
+   background: #ffff;
    padding: 0;
    margin: 0;
    opacity: 1;
-   transition: 0s
+   transition: 0.4s
  }
 
  .button-1{
@@ -252,7 +253,7 @@ margin-top: 30px;
   background:  #ec4958;
   border-radius: 20px;
   margin-bottom:40px;
-  margin-top: -95px;
+  margin-top: -82px;
 }
 
 .music-life{
@@ -351,6 +352,11 @@ line-height: 20px;
 color: grey;
 }
 
+.caption:hover p{
+  color: #fff;
+  transition: 0.3s;
+}
+
 .wrapper-collage{
   padding: 10px;
 }
@@ -386,6 +392,28 @@ color: grey;
 .news p{
   color: #ffff;
   font-size:14px;
+  transition: 0.5s;
+}
+
+.news:hover{
+  color: black;
+  background: #ffff;
+}
+
+.news:hover p{
+  color: #000;
+  font-size:24px;
+  transition: 0.5s;
+}
+
+.news img{
+  display: none;
+}
+
+.news:hover img{
+  width: 80px;
+  display: block;
+
 }
 
 .parallax{
@@ -396,6 +424,11 @@ color: grey;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.parallax:hover{
+  opacity: 0.8;
+  transition: 0.8s;
 }
 
 .parallax-content img{
@@ -414,14 +447,25 @@ line-height: 40px;
 }
 
 /* LIVE DATES SECTION */
+
 .date-tables{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background: #252a33;
+  transition: 2s;
   padding-bottom: 100px;
+
 }
+/* .date-tables:hover{
+  background: none;
+  transition:2s;
+  background-image: url(./collage/audience.jpeg);
+  transition: 2;
+  background-size: cover;
+} */
+
 
 .date-tables h1{
   color:#ffff;
@@ -449,17 +493,24 @@ line-height: 40px;
   width:1000px;
   font-size: 15px;
   color: grey;
-  background: #323844;
-  border:1px solid red;
+  background: #484f5d;
+  /* border:1px solid red; */
   margin-left: -15px;
+  margin-top: 15px;
+
 }
 
 .date span{
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 .date-toggle span{
-padding-left: 30px;
+margin-left: 30px;
+color: white
+}
+
+.date:hover i{
+  color:#ffff;
 }
 
 /* DATES LINE */
@@ -469,20 +520,35 @@ padding-left: 30px;
   align-items: center;
   height:150px;
   background: #ec4958;
+  transition:0.5s;
 }
 .dates-line:hover{
   color: black;
   background: #ffff;
+  transition:0.5s;
 }
 
 .dates-line p{
   color: #ffff;
   font-size:14px;
+  transition: 0.5s;
 }
 
 .dates-line:hover p{
 color:black;
+font-size:24px;
+transition: 0.5s;
 }
+
+.dates-line img{
+  display: none;
+  transition: 0.5s;
+}
+
+.dates-line:hover img{
+  display: block;
+}
+
 
 .footer{
   height:150px;
