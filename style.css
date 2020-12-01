@@ -604,7 +604,7 @@ padding: 20px;
 .social-icons{
   display: flex;
   align-items: center;
-  padding-right: 40px;
+  padding-right: 100px;
 
 }
 .social-container{
@@ -628,4 +628,25 @@ padding: 20px;
 }
 .social-container .fab:hover{
   color: #ffff;
+}
+
+/* // Scroll Back To Top Button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #323844;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
 }
