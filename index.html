@@ -19,6 +19,58 @@
 
 <!-- HomePage -->
 <div id="app" class="app">
+
+  <header>
+          <nav class="main-nav">
+            <div class="logo">
+              <img src="./img/avada-music-logo.png" alt="">
+            </div>
+            <Burger></Burger>
+          </nav>
+
+
+
+        <Sidebar>
+          <ul class="sidebar-panel-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Meet The Band</a></li>
+            <li><a href="#contact">Live Dates</a></li>
+            <li><a href="#Lates-News">Lates News</a></li>
+            <li><a href="#Album">Album</a></li>
+            <li><a href="#Fans">Fans</a></li>
+          </ul>
+        </Sidebar>
+      </header>
+      </div>
+
+    <template id="sidebar">
+        <div class="sidebar">
+            <div class="sidebar-backdrop" @click="closeSidebarPanel" v-if="isPanelOpen"></div>
+            <transition name="slide">
+                <div v-if="isPanelOpen"
+                     class="sidebar-panel">
+                    <slot></slot>
+                </div>
+            </transition>
+        </div>
+    </template>
+
+    <template id="burger">
+        <div id="burger"
+             :class="{ 'active' : isBurgerActive }">
+            <slot>
+                <button type="button" class="burger-button" title="Menu" @click.prevent="toggle">
+                    <span class="hidden">Toggle menu</span>
+                    <span class="burger-bar burger-bar--1"></span>
+                    <span class="burger-bar burger-bar--2"></span>
+                    <span class="burger-bar burger-bar--3"></span>
+                </button>
+            </slot>
+        </div>
+    </template>
+
+<!-- HOMEPAGE -->
+
   <div class="container">
     <main class="homepage">
       <div class="homepage-components">
@@ -142,7 +194,7 @@ follow your musical instinct and search our site for contests that might interes
 </section>
 
 <!-- LIVE DATES SECTION -->
-<div class="date-tables">
+<div id="date" class="date-tables">
 
     <h1>Live Dates</h1>
 
@@ -151,12 +203,24 @@ follow your musical instinct and search our site for contests that might interes
   <span class="date-tickets">
 Choose your favorite event and book your ticket through our website or through authorized resellers <br> for the sale of live concert tickets.</span>
 
-  <div class="date">
-    <div><i class="fas fa-plus"></i>
-      <span v-for="(element) in menu">{{element.dates}}</span>
+  <div class="date" v-for="(element) in dates">
+
+    <div @click="element.isOpen = !element.isOpen">
+      <i v-if="element.isOpen === false" class="fas fa-plus"></i>
+      <i v-else === true class="fas fa-minus"></i>
+      <span >{{element.day}}</span>
     </div>
+
+    <div v-if="element.isOpen" class="date-toggle">
+      <div>
+        <span >{{element.ticket}}</span>
+      </div>
+    </div>
+
   </div>
-  <div class="date">
+
+
+  <!-- <div class="date">
     <div><i class="fas fa-plus"></i>
       <span></span>
     </div>
@@ -180,7 +244,7 @@ Choose your favorite event and book your ticket through our website or through a
     <div><i class="fas fa-plus"></i>
       <span> </span>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <!-- DATES-LINE -->
