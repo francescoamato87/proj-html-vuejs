@@ -308,7 +308,14 @@ margin-top: 30px;
   text-align: center;
   background: #252a33;
   padding-bottom: 50px;
-
+}
+.post-1:hover,
+.post-2:hover,
+.post-3:hover,
+.post-4:hover,
+.post-5:hover,
+.post-6:hover{
+  opacity: 0.7;
 }
 
 .collage h1{
