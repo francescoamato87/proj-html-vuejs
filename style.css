@@ -240,6 +240,8 @@ margin-top: 30px;
  .button-1{
    background: #ec4958;
    margin-right: 10px;
+   border-color: #ec4958;
+
  }
 .button-2{
   margin-left: 10px;
@@ -449,23 +451,22 @@ line-height: 40px;
 /* LIVE DATES SECTION */
 
 .date-tables{
+  background: #252a33;
+  transition: 2s;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #252a33;
-  transition: 2s;
   padding-bottom: 100px;
-
 }
-/* .date-tables:hover{
-  background: none;
-  transition:2s;
-  background-image: url(./collage/audience.jpeg);
-  transition: 2;
-  background-size: cover;
-} */
 
+.date-tables:hover{
+  background:none;
+  display: flex;
+  background-image: url(./collage/audience.jpeg);
+  transition:2s;
+  background-size: cover;
+}
 
 .date-tables h1{
   color:#ffff;

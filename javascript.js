@@ -1,4 +1,3 @@
-
 // MY PERSONAL LOGIC
 
 const footer = new Vue({
@@ -127,6 +126,8 @@ Vue.component('burger', {
 new Vue({
   el: '#app'
 });
+
+// w3Schools.com DOCUMENTATION
 
 // Scroll Back To Top Button
 
