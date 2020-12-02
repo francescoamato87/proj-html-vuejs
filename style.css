@@ -512,6 +512,10 @@ line-height: 40px;
   margin-left: 30px;
 }
 
+.date span:hover{
+color:#ec4958;
+}
+
 .date-toggle span{
 margin-left: 30px;
 color: white
